@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Rayani | Senior Data Analyst & BI Specialist Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Deep Rayani — Senior Data Analyst specializing in Power BI, SQL, Python ML, Snowflake, Tableau, and executive analytics dashboards.">
+  <meta name="keywords"
+    content="Data Analyst, Deep Rayani, Power BI, SQL, Python, Data Analytics, BI, Tableau, Snowflake">
+  <meta name="author" content="Deep Rayani">
+  <meta property="og:title" content="Deep Rayani | Senior Data Analyst">
+  <meta property="og:description"
+    content="Interactive analytics portfolio with live sandbox, case studies, and ML project demos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient orbs -->
+  <div class="orb"
+    style="width:500px;height:500px;top:-100px;left:-150px;background:radial-gradient(circle,#06b6d4,transparent 70%)">
+  </div>
+  <div class="orb"
+    style="width:600px;height:600px;top:600px;right:-200px;background:radial-gradient(circle,#6366f1,transparent 70%)">
+  </div>
+  <div class="orb"
+    style="width:400px;height:400px;top:2000px;left:-100px;background:radial-gradient(circle,#8b5cf6,transparent 70%)">
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════════════════════ -->
+  <header id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="Deep Rayani home">
+          <div class="nav-logo-badge"
+            style="overflow:hidden;padding:0;background:none;box-shadow:0 0 0 2px var(--accent-c),0 4px 12px rgba(6,182,212,.35);">
+            <img src="avatar.png" alt="Deep Rayani"
+              style="width:100%;height:100%;object-fit:cover;border-radius:.75rem;display:block;">
+            <span class="nav-dot pulse-dot"></span>
+          </div>
+          <div class="nav-brand">
+            <h1>Deep Rayani</h1>
+            <p>Data Analytics</p>
+          </div>
+        </a>
+
+        <!-- Desktop links -->
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#playground">Playground <span
+              style="font-size:.62rem;padding:.15rem .45rem;background:rgba(6,182,212,.15);color:var(--accent-c);border-radius:999px;font-family:var(--font-mono);border:1px solid rgba(6,182,212,.3)">Live</span></a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Timeline</a>
+          <a href="#certifications">Credentials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <button id="theme-btn" aria-label="Toggle theme">
+            <i id="theme-icon" class="fas fa-sun" style="color:var(--accent-c)"></i>
+          </button>
+          <a href="#contact" class="nav-resume open-resume">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
+          <button id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <i id="ham-icon" class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <nav id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#about" class="mob-link">About Deep</a>
+        <a href="#playground" class="mob-link">Interactive Playground</a>
+        <a href="#skills" class="mob-link">Skills & Tools</a>
+        <a href="#projects" class="mob-link">Case Studies</a>
+        <a href="#experience" class="mob-link">Timeline</a>
+        <a href="#certifications" class="mob-link">Credentials</a>
+        <a href="#contact" class="mob-link">Contact Deep</a>
+        <button class="mnav-btn open-resume">
+          <i class="fas fa-file-pdf"></i>&nbsp; View Resume
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left -->
+          <div class="reveal">
+            <!-- Profile Card -->
+            <div class="hero-profile-card">
+              <div class="hero-avatar-wrap">
+                <img src="avatar.png" alt="Deep Rayani profile photo" class="hero-avatar-img">
+                <span class="hero-avatar-ring"></span>
+              </div>
+              <div class="hero-profile-info">
+                <span style="font-size:.75rem;font-weight:700;">Deep Rayani</span>
+                <span style="font-size:.65rem;font-family:var(--font-mono);color:var(--accent-c);">Senior Data
+                  Analyst</span>
+              </div>
+              <span class="badge badge-e" style="font-size:.62rem;margin-left:auto;">
+                <span
+                  style="width:6px;height:6px;border-radius:50%;background:var(--accent-e);animation:pulse-ring 2s infinite;display:inline-block"></span>
+                Open to Work
+              </span>
+            </div>
+
+            <div class="hero-avail" style="margin-top:.875rem;">
+              <span class="badge badge-c">
+                <span
+                  style="width:8px;height:8px;border-radius:50%;background:var(--accent-e);animation:pulse-ring 2s infinite;display:inline-block"></span>
+                Available for Senior DA Roles & Projects
+              </span>
+            </div>
+
+            <h1 class="hero-h1">
+              Transforming Raw Data into
+              <span class="text-grad-c">Strategic Business Value</span>
+            </h1>
+
+            <div class="hero-type-row">
+              <span style="color:var(--accent-c)">›</span>
+              <span id="typing-el"></span>
+              <span class="cursor"></span>
+            </div>
+
+            <p class="hero-para">
+              Hi, I'm <strong>Deep Rayani</strong>. A results-driven Data Analytics Specialist with expertise turning
+              complex multi-source datasets into executive Power BI/Tableau dashboards, scalable SQL pipelines, and
+              predictive ML models that drive ROI.
+            </p>
+
+            <div class="hero-btns">
+              <a href="#projects" class="btn-primary">
+                <i class="fas fa-folder-open"></i> Explore Case Studies
+              </a>
+              <a href="#playground" class="btn-glass">
+                <i class="fas fa-chart-line" style="color:var(--accent-c)"></i> Live Playground
+              </a>
+            </div>
+
+            <div class="hero-tools">
+              <span class="lbl">Core Tools:</span>
+              <div class="icons">
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fas fa-database" title="SQL"></i>
+                <i class="fas fa-chart-bar" title="Power BI"></i>
+                <i class="fas fa-chart-pie" title="Tableau"></i>
+                <i class="fas fa-cloud" title="Snowflake"></i>
+                <i class="fab fa-github" title="Git"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right — dashboard widget -->
+          <div class="reveal" style="position:relative;padding:.5rem;">
+            <div class="hero-widget float">
+              <div class="widget-bar">
+                <div style="display:flex;align-items:center;gap:.5rem;">
+                  <div class="widget-dots">
+                    <span style="background:#ef4444;opacity:.8"></span>
+                    <span style="background:#f59e0b;opacity:.8"></span>
+                    <span style="background:#10b981;opacity:.8"></span>
+                  </div>
+                  <span
+                    style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-muted)">DEEP_ANALYTICS_V3</span>
+                </div>
+                <span
+                  style="font-family:var(--font-mono);font-size:.65rem;padding:.2rem .5rem;border-radius:999px;background:rgba(16,185,129,.1);color:var(--accent-e);border:1px solid rgba(16,185,129,.25);display:flex;align-items:center;gap:.35rem;">
+                  <span
+                    style="width:6px;height:6px;border-radius:50%;background:var(--accent-e);animation:pulse-ring 2s infinite;display:inline-block"></span>
+                  ONLINE
+                </span>
+              </div>
+
+              <div style="margin-bottom:.5rem;">
+                <p style="font-size:.65rem;font-family:var(--font-mono);color:var(--text-muted)">ANNUAL REVENUE IMPACT
+                </p>
+                <div class="widget-kpi">$1,420,500</div>
+                <span class="badge badge-e" style="margin-top:.375rem;font-size:.68rem;">
+                  <i class="fas fa-arrow-trend-up"></i> +34.8% YoY
+                </span>
+              </div>
+
+              <!-- Sparkline SVG -->
+              <div style="height:100px;width:100%">
+                <svg viewBox="0 0 300 90" style="width:100%;height:100%">
+                  <defs>
+                    <linearGradient id="hg" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#06b6d4" stop-opacity=".45" />
+                      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 72 Q50 55 90 64 T180 36 T260 16 T300 8 L300 90 L0 90Z" fill="url(#hg)" />
+                  <path d="M0 72 Q50 55 90 64 T180 36 T260 16 T300 8" fill="none" stroke="#06b6d4" stroke-width="2.5"
+                    class="chart-line" />
+                  <circle cx="300" cy="8" r="4" fill="#38bdf8" style="animation:pulse-ring 2s infinite" />
+                </svg>
+              </div>
+
+              <div class="widget-mini-grid">
+                <div class="widget-chip">
+                  <p>Churn Reduction</p>
+                  <p style="color:var(--accent-e)">−22.4%</p>
+                </div>
+                <div class="widget-chip">
+                  <p>ETL Latency</p>
+                  <p style="color:var(--accent-i)">−65% Faster</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating badges -->
+            <div class="widget-badge badge-tl float" style="max-width:180px;">
+              <div class="icon" style="background:rgba(6,182,212,.15);color:var(--accent-c)"><i class="fas fa-bolt"></i>
+              </div>
+              <div class="info">
+                <p>Pipeline Accuracy</p>
+                <p>99.2% Uptime</p>
+              </div>
+            </div>
+            <div class="widget-badge badge-bl float-d" style="max-width:190px;">
+              <div class="icon" style="background:rgba(99,102,241,.15);color:var(--accent-i)"><i
+                  class="fas fa-brain"></i></div>
+              <div class="info">
+                <p>ROC-AUC Score</p>
+                <p>0.894 Model</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     STATS COUNTER
+═══════════════════════════════════════════════════════════════ -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid">
+
+          <div class="glass stat-card reveal">
+            <div class="stat-icon" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                class="fas fa-diagram-project"></i></div>
+            <div class="stat-val" style="color:var(--accent-c)"><span class="ctr" data-to="15" data-sfx="+">0</span>
+            </div>
+            <div class="stat-lbl">End-to-End Analytics Projects</div>
+          </div>
+
+          <div class="glass stat-card reveal">
+            <div class="stat-icon" style="background:rgba(99,102,241,.12);color:var(--accent-i)"><i
+                class="fas fa-database"></i></div>
+            <div class="stat-val" style="color:var(--accent-i)"><span class="ctr" data-to="2.5" data-sfx="M+"
+                data-dec="1">0</span></div>
+            <div class="stat-lbl">Records Processed & Modeled</div>
+          </div>
+
+          <div class="glass stat-card reveal">
+            <div class="stat-icon" style="background:rgba(16,185,129,.12);color:var(--accent-e)"><i
+                class="fas fa-chart-pie"></i></div>
+            <div class="stat-val" style="color:var(--accent-e)"><span class="ctr" data-to="35" data-sfx="%">0</span>
+            </div>
+            <div class="stat-lbl">Avg Business Efficiency Gain</div>
+          </div>
+
+          <div class="glass stat-card reveal">
+            <div class="stat-icon" style="background:rgba(245,158,11,.12);color:var(--accent-a)"><i
+                class="fas fa-bullseye"></i></div>
+            <div class="stat-val" style="color:var(--accent-a)"><span class="ctr" data-to="99.2" data-sfx="%"
+                data-dec="1">0</span></div>
+            <div class="stat-lbl">Pipeline & Data Model Uptime</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Analytics Philosophy</span></span>
+          <h2 class="section-title">Bridging the Gap Between <span class="text-grad-c">Data Engineering</span> &amp;
+            <span class="text-grad-i">Executive Action</span>
+          </h2>
+          <p class="section-desc">I don't just generate reports — I architect end-to-end data systems that empower
+            leaders to make confident, revenue-impacting decisions.</p>
+        </div>
+
+        <div class="pillars">
+          <div class="glass pillar reveal">
+            <div class="pillar-icon" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                class="fas fa-server"></i></div>
+            <h3>Data Engineering & ETL</h3>
+            <p>Scalable SQL schemas, star-schema warehouses (PostgreSQL, Snowflake), and automated Python batch
+              ingestion DAGs.</p>
+            <div class="tags-row">
+              <span class="tag" style="color:var(--accent-c)">SQL</span>
+              <span class="tag" style="color:var(--accent-c)">Snowflake</span>
+              <span class="tag" style="color:var(--accent-c)">Python</span>
+            </div>
+          </div>
+
+          <div class="glass pillar reveal">
+            <div class="pillar-icon" style="background:rgba(99,102,241,.12);color:var(--accent-i)"><i
+                class="fas fa-magnifying-glass-chart"></i></div>
+            <h3>Exploratory Analysis</h3>
+            <p>Uncovering hidden patterns, anomalies, churn triggers, and cohort behavior through rigorous statistical
+              EDA.</p>
+            <div class="tags-row">
+              <span class="tag" style="color:var(--accent-i)">Pandas</span>
+              <span class="tag" style="color:var(--accent-i)">NumPy</span>
+              <span class="tag" style="color:var(--accent-i)">R</span>
+            </div>
+          </div>
+
+          <div class="glass pillar reveal">
+            <div class="pillar-icon" style="background:rgba(16,185,129,.12);color:var(--accent-e)"><i
+                class="fas fa-chart-line"></i></div>
+            <h3>Executive BI Dashboards</h3>
+            <p>Intuitive real-time Power BI and Tableau dashboards with DAX time-intelligence, RLS, and visual
+              storytelling.</p>
+            <div class="tags-row">
+              <span class="tag" style="color:var(--accent-e)">Power BI</span>
+              <span class="tag" style="color:var(--accent-e)">DAX</span>
+              <span class="tag" style="color:var(--accent-e)">Tableau</span>
+            </div>
+          </div>
+
+          <div class="glass pillar reveal">
+            <div class="pillar-icon" style="background:rgba(245,158,11,.12);color:var(--accent-a)"><i
+                class="fas fa-brain"></i></div>
+            <h3>Predictive Analytics & ML</h3>
+            <p>XGBoost and Random Forest models for CLV prediction, churn forecasting, and behavioral segmentation.</p>
+            <div class="tags-row">
+              <span class="tag" style="color:var(--accent-a)">XGBoost</span>
+              <span class="tag" style="color:var(--accent-a)">Scikit-Learn</span>
+              <span class="tag" style="color:var(--accent-a)">Time Series</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     INTERACTIVE PLAYGROUND
+═══════════════════════════════════════════════════════════════ -->
+    <section id="playground">
+      <div class="container">
+        <div class="pg-header reveal">
+          <div>
+            <span class="badge badge-c" style="margin-bottom:.5rem">Live Interactive Sandbox</span>
+            <h2 class="section-title" style="text-align:left;margin-bottom:.375rem">Deep's <span
+                class="text-grad-c">Analytics Simulator</span></h2>
+            <p style="font-size:.85rem;color:var(--text-secondary);max-width:480px">Toggle metrics and regions to see
+              live SVG chart updates, KPI recalculations, and data log previews.</p>
+          </div>
+          <div
+            style="display:flex;align-items:center;gap:.5rem;padding:.5rem .875rem;border-radius:.625rem;background:rgba(6,182,212,.07);border:1px solid rgba(6,182,212,.2);font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted);flex-shrink:0">
+            <i class="fas fa-sliders" style="color:var(--accent-c)"></i> Interactive Controls Active
+          </div>
+        </div>
+
+        <div class="glass reveal" style="padding:1.5rem;border:1px solid rgba(6,182,212,.25)">
+          <!-- Controls -->
+          <div class="pg-controls">
+            <span class="ctrl-label">Metric:</span>
+            <div class="ctrl-btns" id="metric-btns">
+              <button class="mbtn active-c" data-metric="revenue"><i class="fas fa-dollar-sign"></i> Revenue</button>
+              <button class="mbtn" data-metric="churn"><i class="fas fa-user-minus"></i> Churn</button>
+              <button class="mbtn" data-metric="conversion"><i class="fas fa-filter-circle-dollar"></i>
+                Conversion</button>
+              <button class="mbtn" data-metric="cac"><i class="fas fa-bullseye"></i> CAC</button>
+            </div>
+            <span class="ctrl-label" style="margin-left:auto">Region:</span>
+            <div class="ctrl-btns" id="region-btns">
+              <button class="mbtn active-i" data-region="all">Global</button>
+              <button class="mbtn" data-region="na">N. America</button>
+              <button class="mbtn" data-region="eu">Europe</button>
+              <button class="mbtn" data-region="apac">APAC</button>
+            </div>
+          </div>
+
+          <div class="pg-body">
+            <!-- SVG Chart -->
+            <div>
+              <div class="chart-wrap">
+                <svg id="pg-svg" style="width:100%;height:100%;overflow:visible"></svg>
+              </div>
+              <p
+                style="font-size:.65rem;font-family:var(--font-mono);color:var(--text-muted);text-align:right;margin-top:.375rem">
+                <i class="fas fa-mouse-pointer" style="color:var(--accent-c)"></i> Hover datapoints for values
+              </p>
+            </div>
+
+            <!-- KPIs -->
+            <div class="pg-kpis">
+              <div class="kpi-card">
+                <div class="lbl">Current Period</div>
+                <div class="val" id="pg-kpi1" style="color:var(--accent-c)">—</div>
+              </div>
+              <div class="kpi-card">
+                <div class="lbl">YTD Change</div>
+                <div class="val" id="pg-kpi2" style="color:var(--accent-e)">—</div>
+              </div>
+              <div class="kpi-card">
+                <div class="lbl">Monthly Avg</div>
+                <div class="val" id="pg-kpi3" style="color:var(--accent-a)">—</div>
+              </div>
+              <div class="kpi-card">
+                <div class="lbl" style="margin-bottom:.375rem">Recent Log</div>
+                <table class="kpi-table" style="width:100%">
+                  <tbody id="pg-table"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════════════════════════ -->
+    <section id="skills">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Technical Competencies</span></span>
+          <h2 class="section-title">Tools &amp; Technologies <span class="text-grad-c">In Deep's Arsenal</span></h2>
+          <p class="section-desc">A comprehensive matrix of proficiencies across query languages, enterprise BI tools,
+            cloud databases, and statistical ML frameworks.</p>
+          <div class="filter-row">
+            <button class="filter-btn active" data-cat="all">All Skills</button>
+            <button class="filter-btn" data-cat="lang">Languages & SQL</button>
+            <button class="filter-btn" data-cat="bi">BI & Visualization</button>
+            <button class="filter-btn" data-cat="db">Databases & Cloud</button>
+            <button class="filter-btn" data-cat="ml">ML & Statistics</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+
+          <!-- SQL -->
+          <div class="glass skill-card reveal" data-cat="lang">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                    class="fas fa-database"></i></div>
+                <div>
+                  <div class="sk-name">SQL (PostgreSQL / T-SQL)</div>
+                  <div class="sk-sub">Expert · 3+ Yrs</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-c)">95%</span>
+            </div>
+            <p class="sk-desc">Window functions, CTEs, query optimization, indexing, stored procedures, star schema
+              modeling.</p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="95%"
+                style="background:linear-gradient(90deg,var(--accent-c),var(--accent-i))"></div>
+            </div>
+          </div>
+
+          <!-- Power BI -->
+          <div class="glass skill-card reveal" data-cat="bi">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(245,158,11,.12);color:var(--accent-a)"><i
+                    class="fas fa-chart-bar"></i></div>
+                <div>
+                  <div class="sk-name">Power BI & DAX</div>
+                  <div class="sk-sub">Certified · PL-300</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-a)">95%</span>
+            </div>
+            <p class="sk-desc">Complex DAX measures, Time-Intelligence, Power Query M, Row-Level Security, multi-page
+              layouts.</p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="95%"
+                style="background:linear-gradient(90deg,var(--accent-a),var(--accent-c))"></div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="glass skill-card reveal" data-cat="lang">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(99,102,241,.12);color:var(--accent-i)"><i
+                    class="fab fa-python"></i></div>
+                <div>
+                  <div class="sk-name">Python (Pandas / NumPy)</div>
+                  <div class="sk-sub">Advanced · EDA & Automation</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-i)">90%</span>
+            </div>
+            <p class="sk-desc">Data wrangling, ETL automation, Matplotlib/Seaborn visualization, REST API integration.
+            </p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="90%"
+                style="background:linear-gradient(90deg,var(--accent-i),var(--accent-p))"></div>
+            </div>
+          </div>
+
+          <!-- Tableau -->
+          <div class="glass skill-card reveal" data-cat="bi">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                    class="fas fa-chart-pie"></i></div>
+                <div>
+                  <div class="sk-name">Tableau Desktop</div>
+                  <div class="sk-sub">Specialist · Visual Storytelling</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-c)">88%</span>
+            </div>
+            <p class="sk-desc">Calculated fields, LOD expressions, interactive parameters, Server published workbooks.
+            </p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="88%"
+                style="background:linear-gradient(90deg,var(--accent-c),var(--accent-e))"></div>
+            </div>
+          </div>
+
+          <!-- Snowflake -->
+          <div class="glass skill-card reveal" data-cat="db">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(99,102,241,.12);color:var(--accent-i)"><i
+                    class="fas fa-cloud"></i></div>
+                <div>
+                  <div class="sk-name">Snowflake & BigQuery</div>
+                  <div class="sk-sub">Intermediate · Cloud Analytics</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-i)">85%</span>
+            </div>
+            <p class="sk-desc">Virtual warehouses, zero-copy cloning, semi-structured JSON querying, cloud data
+              pipelines.</p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="85%"
+                style="background:linear-gradient(90deg,var(--accent-i),var(--accent-c))"></div>
+            </div>
+          </div>
+
+          <!-- Scikit-Learn -->
+          <div class="glass skill-card reveal" data-cat="ml">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(16,185,129,.12);color:var(--accent-e)"><i
+                    class="fas fa-brain"></i></div>
+                <div>
+                  <div class="sk-name">Scikit-Learn & XGBoost</div>
+                  <div class="sk-sub">Predictive Modeling</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-e)">82%</span>
+            </div>
+            <p class="sk-desc">Churn prediction, logistic regression, decision trees, hyperparameter tuning,
+              cross-validation.</p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="82%"
+                style="background:linear-gradient(90deg,var(--accent-e),var(--accent-c))"></div>
+            </div>
+          </div>
+
+          <!-- Excel -->
+          <div class="glass skill-card reveal" data-cat="bi">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(16,185,129,.12);color:var(--accent-e)"><i
+                    class="fas fa-file-excel"></i></div>
+                <div>
+                  <div class="sk-name">Advanced Excel & VBA</div>
+                  <div class="sk-sub">Financial & Ad-hoc</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-e)">92%</span>
+            </div>
+            <p class="sk-desc">XLOOKUP, INDEX/MATCH, Pivot Tables, Power Pivot, automated VBA macros, scenario modeling.
+            </p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="92%"
+                style="background:linear-gradient(90deg,var(--accent-e),var(--accent-i))"></div>
+            </div>
+          </div>
+
+          <!-- R -->
+          <div class="glass skill-card reveal" data-cat="ml">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                    class="fas fa-r"></i></div>
+                <div>
+                  <div class="sk-name">R (ggplot2 / dplyr)</div>
+                  <div class="sk-sub">Statistical Inference</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-c)">78%</span>
+            </div>
+            <p class="sk-desc">A/B testing, ANOVA, regression diagnostics, ggplot2 publication-quality charts, survival
+              analysis.</p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="78%"
+                style="background:linear-gradient(90deg,var(--accent-c),var(--accent-p))"></div>
+            </div>
+          </div>
+
+          <!-- dbt -->
+          <div class="glass skill-card reveal" data-cat="db">
+            <div class="skill-head">
+              <div class="skill-icon-wrap">
+                <div class="sk-icon" style="background:rgba(245,158,11,.12);color:var(--accent-a)"><i
+                    class="fas fa-diagram-next"></i></div>
+                <div>
+                  <div class="sk-name">dbt & Airflow DAGs</div>
+                  <div class="sk-sub">Transformation & Testing</div>
+                </div>
+              </div>
+              <span class="sk-pct" style="color:var(--accent-a)">80%</span>
+            </div>
+            <p class="sk-desc">Data transformations, automated SQL testing, lineage DAGs, materialized view management.
+            </p>
+            <div class="sk-bar-track">
+              <div class="skill-fill" data-w="80%"
+                style="background:linear-gradient(90deg,var(--accent-a),var(--accent-e))"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Featured Work</span></span>
+          <h2 class="section-title">Data Analytics <span class="text-grad-c">Case Studies</span></h2>
+          <p class="section-desc">Real-world initiatives engineered by Deep. Click any card to view full methodology,
+            code, and business outcomes.</p>
+          <div class="proj-filter filter-row">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="powerbi">Power BI / Tableau</button>
+            <button class="filter-btn" data-filter="python">Python & ML</button>
+            <button class="filter-btn" data-filter="sql">SQL & ETL</button>
+          </div>
+        </div>
+
+        <div class="proj-grid">
+
+          <!-- Project 1 -->
+          <article class="glass proj-card reveal" data-filter="python">
+            <div class="proj-top">
+              <span class="badge badge-c" style="font-size:.65rem">Python & ML</span>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)">250K+
+                Subscribers</span>
+            </div>
+            <h3 class="proj-title">Telecom Customer Churn Prediction & Retention Engine</h3>
+            <p class="proj-desc">Analyzed 250K+ subscriber records with XGBoost and Random Forest. Identified top churn
+              risk indicators and built an interactive Streamlit retention portal.</p>
+            <div class="proj-metrics">
+              <div>
+                <div class="pm-lbl">Churn Drop</div>
+                <div class="pm-val" style="color:var(--accent-e)">22%</div>
+              </div>
+              <div>
+                <div class="pm-lbl">ROC-AUC</div>
+                <div class="pm-val" style="color:var(--accent-c)">0.894</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Annual ROI</div>
+                <div class="pm-val" style="color:var(--accent-i)">$420K</div>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag" style="color:var(--accent-c)">Python</span>
+              <span class="tag" style="color:var(--accent-i)">XGBoost</span>
+              <span class="tag" style="color:var(--accent-e)">Scikit-Learn</span>
+              <span class="tag" style="color:var(--accent-a)">Streamlit</span>
+            </div>
+            <div class="proj-footer">
+              <button class="case-btn open-case" data-case="churn" style="color:var(--accent-c)">View Full Case Study <i
+                  class="fas fa-arrow-right" style="font-size:.7rem"></i></button>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)"><i
+                  class="fab fa-github"></i> Public Repo</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass proj-card reveal" data-filter="powerbi">
+            <div class="proj-top">
+              <span class="badge badge-a" style="font-size:.65rem">Power BI & Enterprise</span>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)">12 Global
+                Territories</span>
+            </div>
+            <h3 class="proj-title">Global Executive Sales & Operations Power BI Suite</h3>
+            <p class="proj-desc">Multi-page Power BI suite connecting SQL Server, Salesforce & Google Analytics.
+              Engineered 40+ DAX time-intelligence measures with automated incremental refresh.</p>
+            <div class="proj-metrics">
+              <div>
+                <div class="pm-lbl">Time Saved</div>
+                <div class="pm-val" style="color:var(--accent-e)">14 hrs/wk</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Value Found</div>
+                <div class="pm-val" style="color:var(--accent-c)">$1.2M</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Refresh</div>
+                <div class="pm-val" style="color:var(--accent-a)">Auto</div>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag" style="color:var(--accent-a)">Power BI</span>
+              <span class="tag" style="color:var(--accent-c)">DAX</span>
+              <span class="tag" style="color:var(--accent-i)">Power Query M</span>
+              <span class="tag" style="color:var(--accent-e)">RLS</span>
+            </div>
+            <div class="proj-footer">
+              <button class="case-btn open-case" data-case="powerbi" style="color:var(--accent-a)">View Full Case Study
+                <i class="fas fa-arrow-right" style="font-size:.7rem"></i></button>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)"><i
+                  class="fas fa-lock"></i> Enterprise BI</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass proj-card reveal" data-filter="sql">
+            <div class="proj-top">
+              <span class="badge badge-i" style="font-size:.65rem">SQL & Data Engineering</span>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)">50M+ Records</span>
+            </div>
+            <h3 class="proj-title">E-Commerce Star Schema Warehouse & ETL Pipeline</h3>
+            <p class="proj-desc">Kimball Star Schema in PostgreSQL & Snowflake. Python ETL DAGs via Airflow. Boosted
+              query performance 4.2× and achieved 99.9% pipeline uptime.</p>
+            <div class="proj-metrics">
+              <div>
+                <div class="pm-lbl">Rows Loaded</div>
+                <div class="pm-val" style="color:var(--accent-i)">50M+</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Query Speed</div>
+                <div class="pm-val" style="color:var(--accent-e)">4.2×</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Uptime</div>
+                <div class="pm-val" style="color:var(--accent-c)">99.9%</div>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag" style="color:var(--accent-i)">PostgreSQL</span>
+              <span class="tag" style="color:var(--accent-c)">Snowflake</span>
+              <span class="tag" style="color:var(--accent-a)">Python ETL</span>
+              <span class="tag" style="color:var(--accent-e)">Airflow</span>
+            </div>
+            <div class="proj-footer">
+              <button class="case-btn open-case" data-case="etl" style="color:var(--accent-i)">View Full Case Study <i
+                  class="fas fa-arrow-right" style="font-size:.7rem"></i></button>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)"><i
+                  class="fab fa-github"></i> SQL Scripts</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="glass proj-card reveal" data-filter="python">
+            <div class="proj-top">
+              <span class="badge badge-e" style="font-size:.65rem">Healthcare Analytics</span>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)">120K Patients</span>
+            </div>
+            <h3 class="proj-title">Patient Readmission Analytics & Risk Stratification</h3>
+            <p class="proj-desc">Multivariable logistic regression on EHR datasets to predict 30-day readmission risk.
+              Built Tableau clinical dashboard for attending physicians.</p>
+            <div class="proj-metrics">
+              <div>
+                <div class="pm-lbl">Readmission</div>
+                <div class="pm-val" style="color:var(--accent-e)">−18%</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Confidence</div>
+                <div class="pm-val" style="color:var(--accent-c)">95%</div>
+              </div>
+              <div>
+                <div class="pm-lbl">Flags Set</div>
+                <div class="pm-val" style="color:var(--accent-i)">1,200+</div>
+              </div>
+            </div>
+            <div class="proj-tags">
+              <span class="tag" style="color:var(--accent-e)">R</span>
+              <span class="tag" style="color:var(--accent-c)">Tableau</span>
+              <span class="tag" style="color:var(--accent-i)">Logistic Regression</span>
+              <span class="tag" style="color:var(--accent-a)">EHR SQL</span>
+            </div>
+            <div class="proj-footer">
+              <button class="case-btn open-case" data-case="healthcare" style="color:var(--accent-e)">View Full Case
+                Study <i class="fas fa-arrow-right" style="font-size:.7rem"></i></button>
+              <span style="font-size:.7rem;font-family:var(--font-mono);color:var(--text-muted)"><i
+                  class="fas fa-hospital"></i> Clinical</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     EXPERIENCE & EDUCATION
+═══════════════════════════════════════════════════════════════ -->
+    <section id="experience">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Career Journey</span></span>
+          <h2 class="section-title">Experience &amp; <span class="text-grad-c">Educational Background</span></h2>
+          <p class="section-desc">A chronological timeline of professional analytics milestones, contributions, and
+            foundational education.</p>
+        </div>
+
+        <div class="exp-grid">
+          <!-- Experience -->
+          <div class="reveal">
+            <h3
+              style="font-size:1.05rem;font-weight:700;display:flex;align-items:center;gap:.625rem;margin-bottom:1rem">
+              <i class="fas fa-briefcase" style="color:var(--accent-c)"></i> Professional Experience
+            </h3>
+            <div class="timeline">
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">Senior Data Analyst</span>
+                  <span class="tl-period">2024 – Present</span>
+                </div>
+                <div class="tl-company" style="color:var(--accent-c)">Nexus Analytics Corp · San Francisco, CA</div>
+                <ul class="tl-ul">
+                  <li>Led team of 3 analysts to architect automated Power BI suites for 15+ global leadership
+                    stakeholders.</li>
+                  <li>Optimized PostgreSQL pipelines, cutting daily ETL batch time from 45 min to 15 min (65% speedup).
+                  </li>
+                  <li>Built XGBoost churn models saving $420K annual subscriber revenue.</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">Data Analytics Specialist</span>
+                  <span class="tl-period"
+                    style="background:rgba(99,102,241,.1);color:var(--accent-i);border-color:rgba(99,102,241,.25)">2022
+                    – 2024</span>
+                </div>
+                <div class="tl-company" style="color:var(--accent-i)">Insight Analytics Labs · Remote</div>
+                <ul class="tl-ul">
+                  <li>Delivered 25+ Tableau & Power BI dashboards for e-commerce, healthcare, and SaaS clients.</li>
+                  <li>RFM cohort segmentation in SQL boosted marketing campaign conversion by 30%.</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-head">
+                  <span class="tl-role">Junior BI Analyst</span>
+                  <span class="tl-period"
+                    style="background:rgba(16,185,129,.1);color:var(--accent-e);border-color:rgba(16,185,129,.25)">2021
+                    – 2022</span>
+                </div>
+                <div class="tl-company" style="color:var(--accent-e)">DataTech Solutions · Tech Hub</div>
+                <ul class="tl-ul">
+                  <li>Automated Excel VBA macros and SQL extractions, reclaiming 12 hrs/week of manual reporting.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="reveal">
+            <h3
+              style="font-size:1.05rem;font-weight:700;display:flex;align-items:center;gap:.625rem;margin-bottom:1rem">
+              <i class="fas fa-graduation-cap" style="color:var(--accent-i)"></i> Education & Credentials
+            </h3>
+            <div class="glass edu-box">
+              <div class="edu-deg">
+                <div class="edu-badge">
+                  <span class="badge badge-i" style="font-size:.65rem">B.S. Degree</span>
+                  <span style="font-size:.68rem;font-family:var(--font-mono);color:var(--text-muted)">2017 – 2021</span>
+                </div>
+                <h4 style="font-size:.95rem;font-weight:700;margin:.375rem 0 .25rem">B.S. Computer Science & Data
+                  Analytics</h4>
+                <p style="font-size:.75rem;color:var(--text-muted)">State University of Technology · Honors Graduate</p>
+                <p style="font-size:.78rem;color:var(--text-secondary);margin-top:.5rem;line-height:1.65">Coursework:
+                  Data Structures, Database Systems, Applied Statistics, Machine Learning, Data Visualization.</p>
+              </div>
+              <h5
+                style="font-size:.68rem;font-family:var(--font-mono);color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.625rem">
+                Academic Highlights</h5>
+              <ul class="hl-list">
+                <li><i class="fas fa-award" style="color:var(--accent-a)"></i> Dean's Honor List — 6 Consecutive
+                  Semesters</li>
+                <li><i class="fas fa-trophy" style="color:var(--accent-a)"></i> 1st Place — National Campus Data
+                  Hackathon</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     CERTIFICATIONS
+═══════════════════════════════════════════════════════════════ -->
+    <section id="certifications">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Verified Credentials</span></span>
+          <h2 class="section-title">Industry <span class="text-grad-c">Certifications</span></h2>
+          <p class="section-desc">Recognized credentials verifying expertise in Microsoft Power BI, Google, AWS Cloud,
+            and Tableau Desktop.</p>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="glass cert-card reveal">
+            <div class="cert-icon"
+              style="background:rgba(245,158,11,.1);color:var(--accent-a);border-color:rgba(245,158,11,.25)">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h4>Microsoft Certified</h4>
+            <p class="cert-name" style="color:var(--accent-a)">Power BI Data Analyst PL-300</p>
+            <p class="cert-id">ID: PL-300-99482</p>
+            <span class="verified">✓ Verified</span>
+          </div>
+
+          <div class="glass cert-card reveal">
+            <div class="cert-icon"
+              style="background:rgba(6,182,212,.1);color:var(--accent-c);border-color:rgba(6,182,212,.25)">
+              <i class="fab fa-google"></i>
+            </div>
+            <h4>Google Professional</h4>
+            <p class="cert-name" style="color:var(--accent-c)">Data Analytics Certificate</p>
+            <p class="cert-id">ID: G-DA-88310</p>
+            <span class="verified">✓ Verified</span>
+          </div>
+
+          <div class="glass cert-card reveal">
+            <div class="cert-icon"
+              style="background:rgba(99,102,241,.1);color:var(--accent-i);border-color:rgba(99,102,241,.25)">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h4>AWS Certified</h4>
+            <p class="cert-name" style="color:var(--accent-i)">Data Analytics Specialty</p>
+            <p class="cert-id">ID: AWS-DAS-7712</p>
+            <span class="verified">✓ Verified</span>
+          </div>
+
+          <div class="glass cert-card reveal">
+            <div class="cert-icon"
+              style="background:rgba(16,185,129,.1);color:var(--accent-e);border-color:rgba(16,185,129,.25)">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Tableau Desktop</h4>
+            <p class="cert-name" style="color:var(--accent-e)">Certified Specialist</p>
+            <p class="cert-id">ID: TAB-SPEC-3341</p>
+            <span class="verified">✓ Verified</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     ACHIEVEMENTS
+═══════════════════════════════════════════════════════════════ -->
+    <section id="achievements">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Milestones & Honors</span></span>
+          <h2 class="section-title">Key Career <span class="text-grad-c">Achievements</span></h2>
+        </div>
+
+        <div class="ach-grid">
+          <div class="glass ach-card reveal">
+            <div class="ach-icon" style="color:var(--accent-a)"><i class="fas fa-trophy"></i></div>
+            <h4>Best Data Storytelling Award 2024</h4>
+            <p>Awarded by Nexus Analytics for making complex churn insights accessible to non-technical executives.</p>
+          </div>
+          <div class="glass ach-card reveal">
+            <div class="ach-icon" style="color:var(--accent-c)"><i class="fas fa-bolt"></i></div>
+            <h4>65% Pipeline Latency Cut</h4>
+            <p>Engineered indexed PostgreSQL views reducing executive data batch updates from 45 to 15 minutes.</p>
+          </div>
+          <div class="glass ach-card reveal">
+            <div class="ach-icon" style="color:var(--accent-e)"><i class="fas fa-hand-holding-dollar"></i></div>
+            <h4>$1.4M Revenue Value Generated</h4>
+            <p>Identified untapped regional cross-sell segments through RFM and market basket analysis.</p>
+          </div>
+          <div class="glass ach-card reveal">
+            <div class="ach-icon" style="color:var(--accent-i)"><i class="fas fa-medal"></i></div>
+            <h4>5× Certified Analytics Pro</h4>
+            <p>Active certifications across Microsoft Power BI, Google, AWS, and Tableau ecosystems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label"><span class="badge badge-c">Get In Touch</span></span>
+          <h2 class="section-title">Let's Discuss <span class="text-grad-c">Data Initiatives</span></h2>
+          <p class="section-desc">Looking for a Senior Data Analyst, BI Consultant, or custom SQL/Power BI pipeline
+            architect? Let's talk.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Info side -->
+          <div class="reveal" style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="glass" style="padding:1.25rem">
+              <div class="contact-info-card">
+                <div style="display:flex;align-items:center;gap:.75rem;flex:1;min-width:0">
+                  <div class="c-icon-wrap" style="background:rgba(6,182,212,.12);color:var(--accent-c)"><i
+                      class="fas fa-envelope"></i></div>
+                  <div style="min-width:0">
+                    <div class="c-lbl">Email Address</div>
+                    <div class="c-val">deep.rayani.analytics@gmail.com</div>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="deep.rayani.analytics@gmail.com"><i class="fas fa-copy"></i>
+                  Copy</button>
+              </div>
+            </div>
+
+            <div class="glass" style="padding:1.25rem">
+              <div class="contact-info-card">
+                <div style="display:flex;align-items:center;gap:.75rem;flex:1;min-width:0">
+                  <div class="c-icon-wrap" style="background:rgba(99,102,241,.12);color:var(--accent-i)"><i
+                      class="fas fa-phone"></i></div>
+                  <div style="min-width:0">
+                    <div class="c-lbl">Phone / WhatsApp</div>
+                    <div class="c-val">+91-9998003879</div>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+15553829102"><i class="fas fa-copy"></i> Copy</button>
+              </div>
+            </div>
+
+            <div class="glass" style="padding:1.25rem">
+              <div style="display:flex;align-items:center;gap:.75rem">
+                <div class="c-icon-wrap" style="background:rgba(16,185,129,.12);color:var(--accent-e)"><i
+                    class="fas fa-location-dot"></i></div>
+                <div>
+                  <div class="c-lbl">Location</div>
+                  <div class="c-val" style="font-size:.85rem">150 feet ring road Rajkot -360005 (Open to Remote)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://kaggle.com" target="_blank" rel="noopener" class="soc-btn" aria-label="Kaggle"><i
+                  class="fab fa-kaggle"></i></a>
+              <button class="open-resume soc-btn"
+                style="padding:0 1rem;width:auto;font-size:.75rem;font-family:var(--font-mono);gap:.375rem;color:var(--accent-c);border-color:rgba(6,182,212,.3)">
+                <i class="fas fa-file-pdf"></i> Resume
+              </button>
+            </div>
+          </div>
+
+          <!-- Form side -->
+          <div class="glass form-box reveal">
+            <div class="form-title">
+              <i class="fas fa-paper-plane" style="color:var(--accent-c)"></i>
+              Send Deep a Direct Message
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="form-row form-2col" style="margin-bottom:1rem">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Full Name *</label>
+                  <input class="form-input" type="text" id="f-name" placeholder="Deep Ryani">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-email">Email Address *</label>
+                  <input class="form-input" type="email" id="f-email" placeholder="deeprayani@company.com">
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom:1rem">
+                <label class="form-label" for="f-subject">Subject / Project Type</label>
+                <input class="form-input" type="text" id="f-subject"
+                  placeholder="Senior DA Opportunity / Power BI Consultation">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Your Comments *</label>
+                <textarea class="form-input" id="f-msg" rows="5"
+                  placeholder="Hi Deep, we are looking for a Data Analytics Specialist to build automated Power BI dashboards for our enterprise dataset..."></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div style="display:flex;align-items:center;gap:.625rem">
+          <div
+            style="width:34px;height:34px;border-radius:.625rem;background:linear-gradient(135deg,var(--accent-c),var(--accent-i));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-mono);font-weight:800;font-size:.85rem">
+            DR</div>
+          <div>
+            <div style="font-weight:700;font-size:.9rem">Deep Rayani</div>
+            <div style="font-size:.65rem;font-family:var(--font-mono);color:var(--text-muted)">Data Analytics & BI
+              Portfolio</div>
+          </div>
+        </div>
+
+        <nav class="footer-links">
+          <a href="#about">About</a>
+          <a href="#playground">Sandbox</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Credentials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-right">
+          <span>© 2022 - 2026 Deep Rayani. All rights reserved.</span>
+          <span class="footer-clock">
+            <span class="footer-pulse pulse-dot"></span>
+            SYSTEM TIME: <span id="live-clock">—</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     CASE STUDY MODAL
+═══════════════════════════════════════════════════════════════ -->
+  <div id="case-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title-el">
+    <div class="modal-box">
+      <button class="modal-close" id="close-case" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div class="modal-inner">
+        <div>
+          <span id="modal-cat" class="badge badge-c" style="font-size:.65rem;margin-bottom:.5rem">Category</span>
+          <h3 id="modal-title-el"
+            style="font-size:clamp(1.1rem,3vw,1.6rem);font-weight:800;line-height:1.3;margin:.375rem 0 .25rem">Title
+          </h3>
+          <p id="modal-subtitle" style="font-size:.78rem;font-family:var(--font-mono);color:var(--text-muted)">Subtitle
+          </p>
+        </div>
+
+        <div id="modal-metrics" class="modal-metrics"></div>
+
+        <div class="modal-section">
+          <h5>The Problem & Business Challenge</h5>
+          <p id="modal-problem" style="font-size:.82rem;color:var(--text-secondary);line-height:1.75"></p>
+        </div>
+
+        <div class="modal-section">
+          <h5>Analytical Methodology</h5>
+          <ul id="modal-method" class="modal-ul"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h5 id="modal-snip-title" style="color:var(--accent-c)">Code Snippet</h5>
+          <div class="code-block">
+            <pre><code id="modal-code"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+     RESUME MODAL
+═══════════════════════════════════════════════════════════════ -->
+  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box" style="max-width:680px">
+      <button class="modal-close" id="close-resume" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div class="modal-inner">
+        <div
+          style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-bottom:1rem;border-bottom:1px solid var(--glass-border)">
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="position:relative;flex-shrink:0;">
+              <img src="avatar.png" alt="Deep Rayani"
+                style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-c);box-shadow:0 0 16px rgba(6,182,212,.3);display:block;">
+              <span
+                style="position:absolute;bottom:2px;right:2px;width:12px;height:12px;border-radius:50%;background:var(--accent-e);border:2px solid var(--bg-secondary);"></span>
+            </div>
+            <div>
+              <h3 style="font-size:1.4rem;font-weight:800">Deep Rayani</h3>
+              <p style="font-size:.75rem;font-family:var(--font-mono);color:var(--accent-c)">Senior Data Analyst & BI
+                Specialist</p>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="font-size:.78rem;padding:.55rem 1.1rem;"
+            onclick="document.getElementById('resume-modal').classList.remove('open')">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+
+        <div
+          style="display:flex;flex-direction:column;gap:1.25rem;font-size:.82rem;color:var(--text-secondary);line-height:1.75">
+          <div>
+            <h4
+              style="font-size:.68rem;font-family:var(--font-mono);text-transform:uppercase;color:var(--text-muted);letter-spacing:.07em;border-bottom:1px solid var(--glass-border);padding-bottom:.375rem;margin-bottom:.625rem">
+              Executive Summary</h4>
+            <p>Data Analyst with 3+ years experience transforming multi-terabyte datasets into actionable executive
+              intelligence. Expert in SQL, Power BI DAX, Python ML, and star-schema architecture. Proven ROI: 35%
+              efficiency gains, 14 hrs/wk reporting automation.</p>
+          </div>
+          <div>
+            <h4
+              style="font-size:.68rem;font-family:var(--font-mono);text-transform:uppercase;color:var(--text-muted);letter-spacing:.07em;border-bottom:1px solid var(--glass-border);padding-bottom:.375rem;margin-bottom:.625rem">
+              Technical Competencies</h4>
+            <p><strong style="color:var(--accent-c)">Languages:</strong> SQL (PostgreSQL, T-SQL), Python, R<br>
+              <strong style="color:var(--accent-c)">BI & Viz:</strong> Power BI (DAX, Power Query), Tableau, Advanced
+              Excel<br>
+              <strong style="color:var(--accent-c)">Engineering:</strong> Snowflake, BigQuery, dbt, Airflow, Star
+              Schema<br>
+              <strong style="color:var(--accent-c)">Analytics:</strong> Churn Modeling, Cohort Analysis, A/B Testing,
+              Time Series
+            </p>
+          </div>
+          <div>
+            <h4
+              style="font-size:.68rem;font-family:var(--font-mono);text-transform:uppercase;color:var(--text-muted);letter-spacing:.07em;border-bottom:1px solid var(--glass-border);padding-bottom:.375rem;margin-bottom:.625rem">
+              Experience Highlights</h4>
+            <div style="display:flex;flex-direction:column;gap:.75rem">
+              <div>
+                <div
+                  style="display:flex;justify-content:space-between;flex-wrap:wrap;font-weight:700;font-size:.82rem;color:var(--text-primary)">
+                  <span>Senior Data Analyst — Nexus Analytics Corp</span>
+                  <span style="font-family:var(--font-mono);color:var(--accent-c)">2024–Present</span>
+                </div>
+                <p style="font-size:.76rem;color:var(--text-muted)">Automated Power BI suites for 15+ leadership teams.
+                  Reduced ETL latency 65%.</p>
+              </div>
+              <div>
+                <div
+                  style="display:flex;justify-content:space-between;flex-wrap:wrap;font-weight:700;font-size:.82rem;color:var(--text-primary)">
+                  <span>Data Analytics Specialist — Insight Analytics Labs</span>
+                  <span style="font-family:var(--font-mono);color:var(--accent-i)">2022–2024</span>
+                </div>
+                <p style="font-size:.76rem;color:var(--text-muted)">RFM segmentation in SQL boosted campaign ROI 30%
+                  across Fortune 500 clients.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4
+              style="font-size:.68rem;font-family:var(--font-mono);text-transform:uppercase;color:var(--text-muted);letter-spacing:.07em;border-bottom:1px solid var(--glass-border);padding-bottom:.375rem;margin-bottom:.625rem">
+              Certifications</h4>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.35rem;font-size:.78rem">
+              <li>✦ Microsoft Certified: Power BI Data Analyst Associate (PL-300)</li>
+              <li>✦ Google Data Analytics Professional Certificate</li>
+              <li>✦ AWS Certified Data Analytics – Specialty</li>
+              <li>✦ Tableau Desktop Certified Specialist</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast">
+    <div class="toast-inner">
+      <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+      <div>
+        <div class="toast-t" id="toast-title">Done!</div>
+        <div class="toast-m" id="toast-msg">Message received.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="btt" aria-label="Back to top">
+    <svg class="btt-svg" viewBox="0 0 36 36" fill="none">
+      <path stroke="rgba(255,255,255,.12)" stroke-width="2.5"
+        d="M18 2.0845a15.9155 15.9155 0 0 1 0 31.831 15.9155 15.9155 0 0 1 0-31.831" />
+      <path id="btt-ring" stroke="var(--accent-c)" stroke-width="2.5" stroke-linecap="round"
+        d="M18 2.0845a15.9155 15.9155 0 0 1 0 31.831 15.9155 15.9155 0 0 1 0-31.831" />
+    </svg>
+    <i class="fas fa-arrow-up" style="position:absolute;font-size:.8rem"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
