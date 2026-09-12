@@ -130,10 +130,10 @@ status tinyint
 # what is key constraints ?
 1. provides limit on tables via pk | uk | fk | ck
 2. types of key constraints 
-   1. primary key
-   2. unique key
-   3. foreign key
-   4. compound key
+1. primary key
+2. unique key
+3. foreign key
+4. compound key
 
 # what is primary key ?
 
@@ -298,4 +298,222 @@ update tbl_employee set name='lakhani kishan',email='kishan007@gmail.com',mobile
 
 # DQL query are 
 
-1. select 
+1. **select**
+
+```
+select all data 
+1. select * from tbl_employee
+
+select particular one data
+2. select * from tbl_employee where empid=1;
+
+select particular one data with name
+3. select * from tbl_employee where name='deep';
+
+select particular column name of data
+4. select empid,name,email, mobile from tbl_employee
+or
+select empid,name,email, mobile from tbl_employee where empid=1;
+or
+select empid,name,email, mobile from tbl_employee where name='deep'
+
+select particular range of data 
+5. select * from tbl_employee where empid between 1 and 5;
+
+select particular alternate data from tables 
+6. select * from tbl_employee where empid in (2,7);
+
+select particular limit of data from tables 
+7. select * from tbl_employee where empid limit 0,3;
+or
+select * from tbl_employee where empid limit 2,4;
+
+select employee who's salary > 22500
+8. select * from tbl_employee where salary >22500;
+or
+select * from tbl_employee where salary >=20500; 
+
+select only one column data 
+9.select salary from tbl_employee where salary >=20500;
+
+select only one column of data with alias name 
+10.select salary as salary_of_employee from tbl_employee where salary >=20500; 
+
+select those employee name who's age>19 and salary>=21500
+11. select * FROM tbl_employee where employee_age>19 and salary >=21500;
+
+select those employee email where '007' pattern matching in email 
+12. select * from tbl_employee  where email like '%07%';
+
+```
+
+# alias : 
+1. alias is change any column name in SQL temporary
+```
+select salary as salary_of_employee from tbl_employee where salary >=20500;
+```
+
+
+# TCL : transactional control language
+
+1. TCL is used for transactional control language 
+2. TCL is used for transaction query 
+3. TCL query are 
+
+**examples :** 
+- commit 
+- rollback 
+
+# what is is commit ? 
+
+1. commit is part of TCL 
+2. after delete any data we rollback but before delete we done **commit**
+3. commit is used to save data in tables 
+
+**examples**
+
+```
+START TRANSACTION;
+delete from tbl_employee where empid=1;
+commit;
+```
+
+# what is is  rollback ? 
+
+1. rollback is part of TCL 
+2. after delete any data we rollback but before delete we done **commit**
+3. rollback is used to rollback data after delete in  tables 
+
+**examples**
+
+```
+START TRANSACTION;
+delete from tbl_employee where empid=1;
+select * from tbl_employee where empid=1
+rollback;
+select * from tbl_employee where empid=1
+
+```
+# what is SQL function  ?
+
+1. SQL function is provides some inbuilt function 
+2. SQL function is used to find sum | avg | max etc 
+
+# types of function ?
+
+  - aggrigate function 
+  - scalar function
+
+# aggrigate function 
+
+  1. max()
+  2. min()
+  3. avg()
+  4. sum()
+  5. count()
+
+# scalar function 
+
+  1. lcase()
+  2. ucase()
+  3. first()
+  4. last()
+  5. now()
+  6. round()
+
+**examples of function**
+
+1. select max(salary) as max_salary from tbl_employee;
+2. select min(salary) as min_salary from tbl_employee;
+3. select avg(salary) as average_salary from tbl_employee;
+4. select sum(salary) as sum_salary from tbl_employee;
+5. select count(empid) as total_numbers_employee from tbl_employee
+6. select lcase(name) from tbl_employee;
+7. select ucase(name) from tbl_employee;
+8. select first(name) from tbl_employee;
+9. select last(name) from tbl_employee;
+10. select now(); 
+11. select round(21500.4587,2) from tbl_employee where empid=6;
+12. select round(salary,2) from tbl_employee;
+
+**case based query**
+
+1. find second highest salary from tables 
+  - select * from tbl_employee order by salary desc limit 1,1;
+2. find second highest salary using **subquery**
+
+# what is subquery ?
+
+1. query within another query i.e called subquery
+
+**solution to find second highest salary**
+
+- select max(salary) as second_highest_salary from tbl_employee where salary < (select max(salary) from tbl_employee);
+
+# order by and group by ?
+
+**order by**
+
+1. filter data from tables in asc or desc order there we used order by 
+
+   - select * from tbl_employee order by name asc;
+   - select * from tbl_employee order by salary asc;
+   - select * from tbl_employee order by salary desc;
+
+**group by**
+
+1. group by is used to filter data on group of columns 
+2. group by used **having** clause instead of **where**
+
+- select sum(salary), department from tbl_employee group by department; 
+
+- select sum(salary), department from tbl_employee where employee_age>20 group by department having department='IT';
+
+- select sum(salary), department from tbl_employee where employee_age>18 group by department having department='CSE';
+
+
+# what is SQL string functions ?
+ 1. SQL string function are work with 'string' or character
+ 2. SQL string function are work with 'name', 'email', 'password' etc
+
+**types of string function in SQL**
+
+ 1. UPPER()
+ 2. LOWER()
+ 3. CONCATE()
+ 4. length()
+ 5. trim()
+ 6. replace()
+ 7. right()
+ 8. left()
+
+# what is SQL like operator ?
+
+# what is SQL Normalization ?
+
+
+# what is SQL SQL key constraints ?
+
+
+# what is SQL join  ?
+
+
+# what is SQL Case In ?
+
+
+# what is SQL windows function  ?
+
+
+# what is SQL index or indexer ?
+
+
+# what is SQL view  ?
+
+
+# what is SQL trigger ?
+
+
+# what is SQL store procedure ?
+
+# what is SQL CTE ?
+
