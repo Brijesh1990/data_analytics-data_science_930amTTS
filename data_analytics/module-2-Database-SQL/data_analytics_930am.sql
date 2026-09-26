@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2026 at 06:46 AM
+-- Generation Time: Sep 17, 2026 at 06:50 AM
 -- Server version: 8.0.40
 -- PHP Version: 8.2.12
 
@@ -50,16 +50,23 @@ CREATE TABLE `tbl_employee` (
   `mobile` bigint DEFAULT NULL,
   `address` text,
   `employee_age` int DEFAULT NULL,
-  `salary` int DEFAULT NULL
+  `salary` decimal(10,4) DEFAULT NULL,
+  `department` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `tbl_employee`
 --
 
-INSERT INTO `tbl_employee` (`empid`, `name`, `email`, `mobile`, `address`, `employee_age`, `salary`) VALUES
-(3, 'megha', 'tejas007@gmail.com', 9998003879, '150 feet ring road ', 20, 24600),
-(4, 'tejas', 'tejas@gmail.com', 9998003878, '150 feet', 18, 20500);
+INSERT INTO `tbl_employee` (`empid`, `name`, `email`, `mobile`, `address`, `employee_age`, `salary`, `department`) VALUES
+(1, 'megha', 'megha007@gmail.com', 9121323612, 'rajkot', 19, 20500.1456, 'IT'),
+(2, 'shrushti', 'shrusti007@gmail.com', 9121323812, 'rajkot', 19, 20500.0000, 'IT'),
+(6, 'LAKHANI kishan', 'kishan007@gmail.com', 9128213624, '150 feet ring road rajkot', 22, 20580.6587, 'CSE'),
+(7, 'deep', 'deep007@gmail.com', 9521323618, 'ahemdabad', 21, 21500.4587, 'CSE'),
+(10, 'brijesh', 'brijesh007@gmail.com', 9191923812, 'rajkot', 34, 120500.0000, 'HR'),
+(11, 'deep', 'deep008@gmail.com', 9521623618, 'ahemdabad', 21, 21500.4587, 'IT'),
+(12, 'lokesh', 'lokesh@gmail.com', 9998003871, '150 rjt', 40, 850000.0000, 'IT'),
+(13, 'prince', 'prince@gmail.com', 9998003879, 'prince', 18, 1200.0000, 'CSE');
 
 -- --------------------------------------------------------
 
@@ -92,7 +99,8 @@ ALTER TABLE `tbl_appointment`
 --
 ALTER TABLE `tbl_employee`
   ADD PRIMARY KEY (`empid`),
-  ADD UNIQUE KEY `email` (`email`,`mobile`);
+  ADD UNIQUE KEY `email` (`email`,`mobile`),
+  ADD UNIQUE KEY `email_2` (`email`,`mobile`);
 
 --
 -- Indexes for table `tbl_reviews`
@@ -114,7 +122,7 @@ ALTER TABLE `tbl_appointment`
 -- AUTO_INCREMENT for table `tbl_employee`
 --
 ALTER TABLE `tbl_employee`
-  MODIFY `empid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `empid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tbl_reviews`

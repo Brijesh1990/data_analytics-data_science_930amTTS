@@ -401,25 +401,25 @@ select * from tbl_employee where empid=1
 
 # types of function ?
 
-  - aggrigate function 
-  - scalar function
+- aggrigate function 
+- scalar function
 
 # aggrigate function 
 
-  1. max()
-  2. min()
-  3. avg()
-  4. sum()
-  5. count()
+1. max()
+2. min()
+3. avg()
+4. sum()
+5. count()
 
 # scalar function 
 
-  1. lcase()
-  2. ucase()
-  3. first()
-  4. last()
-  5. now()
-  6. round()
+1. lcase()
+2. ucase()
+3. first()
+4. last()
+5. now()
+6. round()
 
 **examples of function**
 
@@ -439,7 +439,7 @@ select * from tbl_employee where empid=1
 **case based query**
 
 1. find second highest salary from tables 
-  - select * from tbl_employee order by salary desc limit 1,1;
+- select * from tbl_employee order by salary desc limit 1,1;
 2. find second highest salary using **subquery**
 
 # what is subquery ?
@@ -456,9 +456,9 @@ select * from tbl_employee where empid=1
 
 1. filter data from tables in asc or desc order there we used order by 
 
-   - select * from tbl_employee order by name asc;
-   - select * from tbl_employee order by salary asc;
-   - select * from tbl_employee order by salary desc;
+- select * from tbl_employee order by name asc;
+- select * from tbl_employee order by salary asc;
+- select * from tbl_employee order by salary desc;
 
 **group by**
 
@@ -473,29 +473,377 @@ select * from tbl_employee where empid=1
 
 
 # what is SQL string functions ?
- 1. SQL string function are work with 'string' or character
- 2. SQL string function are work with 'name', 'email', 'password' etc
+1. SQL string function are work with 'string' or character
+2. SQL string function are work with 'name', 'email', 'password' etc
 
 **types of string function in SQL**
 
- 1. UPPER()
- 2. LOWER()
- 3. CONCATE()
- 4. length()
- 5. trim()
- 6. replace()
- 7. right()
- 8. left()
+1. UPPER()
+2. LOWER()
+3. CONCATE()
+4. length()
+5. trim()
+6. replace()
+7. right()
+8. left()
+
+**answer**
+1. select upper(name) from tbl_employee
+2. select lower(name) from tbl_employee
+3. select concat(name,",",employee_age) from tbl_employee
+4. select length(name) from tbl_employee;
+5. select trim(name) from tbl_employee;
+6. select replace("i  love brijesh","brijesh","ritesh") from tbl_employee;
+7. select replace("i  love brijesh","brijesh","ritesh") from tbl_employee where empid=10;
+8. select left(name,10) from tbl_employee;
+9. select right(name,5) from tbl_employee;
+
+# export data of SQL in CSV(comma seperated value) | excel | graph
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+# connect SQL data in excel using mysql Community and when we updated | insert data in sql it should be updated in excels also 
+
+1. ![alt text](image-5.png)
 
 # what is SQL like operator ?
 
-# what is SQL Normalization ?
+1. like is an operator in SQL 
+2. like is used to find or search data using **wildcard** pattern
+3. like is used to search data from tables 
+
+**examples**
+
+1. select name from tbl_employee where name like 'd%';
+2. select * from tbl_employee where name like 'd%';
+3. select * from tbl_employee where name like '%h';
+4. select * from tbl_employee where name like '%a%';
+
+# what is  Normalization in SQL ?
+1. Normalization is used to Normalized tables with pk | fk | uk
+2. Normalization is removed the dublicasy of data in tables
+# types of Normalization ?
+- 1NF
+- 2NF
+- 3NF
+- 4NF 
+- 5NF
+
+**examples**
+
+**tbl_category**
+
+| catid     |  catname      |
+|-----------|---------------|
+|    1      |  Mens-clothes |
+|    2      |  Womens-clothes |
+|    3      |  electronics    | 
+
+**tbl_subcategory**
+
+| subcatid     |  catid        |  subcatname        |
+|-----------|-------------------|--------------------|
+|    1      |       1           |   mens-clothes     |
+|    2      |       1           |   mens-tie         |
+|    3      |       1           |   mens-shirt       |
+|    4      |       2           |   womens-shirt      |
+|    5      |       3           |   laptops           | 
+|    6      |       3           |   refrigerator      | 
+|    7      |       3           |   mobiles           | 
 
 
-# what is SQL SQL key constraints ?
+**tbl_products**
+
+| pid | pname  | photo     |   qty     | desc   |  catid    | subcatid  |
+|-----|--------|-----------|-----------|--------|-----------|-----------|
+| 1   | opoo   |op.jpg     |   1       | good   |  3        |   7       |
 
 
+# what is SQL  key constraints ?
+
+**key constraints**
+
+1. key constraints is used to set limits on tables 
+2. key constraints is used pk | uk | fk | ck  to set limits on tables and also called key constraints 
+
+**primary key**:
+**unique key**:
+**foreign key**:
+**compound key**:
+
+# what is primary key ?
+
+- A pk is defined only once time in a tables 
+- A pk is never accept null values 
+- A pk always accept unique data
+- A pk always auto_increment
+
+
+# what is unique key ?
+
+- A uk is defined more than  once time in a table in column 
+- A uk is accept one times a null values 
+- A uk always accept unique data or can not stored dublicate values
+- A uk assign in tables via alter command
+
+
+**syntax or examples**
+
+```
+create table appointment
+(
+apid int AUTO_INCREMENT primary key,
+name varchar(200),
+age int,
+mobile bigint,
+address text,
+appointment_date_time datetime,  
+status tinyint
+)
+
+or
+
+create table reviews
+(
+rid int AUTO_INCREMENT primary key,
+name varchar(200),
+email varchar(255),
+subject varchar(255),
+mobile bigint,
+rating enum('*','**','***','****','*****'),
+added_date_time timestamp  
+)
+or
+
+alter table tbl_reviews add unique(`email`,`mobile`);
+
+``` 
+
+# what is foreign key ?
+
+- A fk is defined more than  once time in a table in column 
+- A fk can not accept any null values 
+- A fk always can  stored dublicate values
+- A fk provides relationship b/w tables with common columns
+
+**examples of foreign key**
+
+```
+create table tbl_category
+(
+catid int AUTO_INCREMENT primary key,
+catname varchar(255)    
+)
+
+or
+
+
+create table tbl_subcategory
+(
+subcatid int AUTO_INCREMENT primary key,
+catid  int,
+CONSTRAINT catid FOREIGN KEY (catid) REFERENCES tbl_category(catid),
+subcatname varchar(255)
+)
+
+or
+
+create table tbl_products
+(
+pid int AUTO_INCREMENT primary key,
+catid  int,
+CONSTRAINT catid FOREIGN KEY (catid) REFERENCES tbl_category(catid),
+subcatid  int,
+CONSTRAINT subcatid FOREIGN KEY (subcatid) REFERENCES tbl_subcategory(subcatid),  
+pname varchar(255),
+qty int, 
+price int,
+description text,
+photo varchar(255),
+created_at datetime        
+)
+
+or
+
+create table tbl_customer(
+custid int AUTO_INCREMENT primary key,
+name varchar(255),
+password varchar(255),
+phone bigint,
+address text
+
+)
+
+or
+
+create table tbl_cart
+(
+cartid int AUTO_INCREMENT primary key,
+catid  int,
+CONSTRAINT catid_key FOREIGN KEY (catid) REFERENCES tbl_category(catid),
+
+subcatid  int,
+CONSTRAINT subcatid FOREIGN KEY (subcatid) REFERENCES tbl_subcategory(subcatid),  
+
+pid  int,
+CONSTRAINT pid FOREIGN KEY (pid) REFERENCES tbl_products(pid), 
+
+custid  int,
+CONSTRAINT custid FOREIGN KEY (custid) REFERENCES tbl_customer(custid), 
+quantity int, 
+subtotal int,        
+created_at datetime        
+)
+
+or
+
+create table tbl_department
+(
+
+depid int AUTO_INCREMENT primary key,
+depname varchar(255)
+
+)
+
+or
+
+create table tbl_company
+(
+
+compid int AUTO_INCREMENT primary key,
+compname varchar(255)
+
+)
+
+or 
+
+create table tbl_salesman
+(
+
+salesid int AUTO_INCREMENT primary key,
+name varchar(255),
+age int,
+address text,
+mobile bigint,
+email varchar(255),
+depid int,
+CONSTRAINT depid foreign key(depid) REFERENCES tbl_department(depid),
+
+compid int,
+CONSTRAINT compid foreign key(compid) REFERENCES tbl_company(compid),
+
+create_at datetime
+
+)
+
+
+```
 # what is SQL join  ?
+1. SQL join are used to join more than one field with common field 
+2. SQL join are used to join table data from one tables to another tables with common field 
+
+# types of JOin ? 
+
+1. join 
+2. inner join 
+3. outer join 
+1. left outer join 
+2. right outer join 
+3. full outer join 
+4. cross join 
+
+# join :
+
+1. join are used to join more than one tables with common field 
+2. join are used to match data from one tables to another table if data matched join the tables otherwise return null values 
+
+**syntax**
+
+```
+select tbl1.*, columname from tbl1 join tbl2 on tbl1.commonfield=tbl2.commfield;
+or
+select tbl_salesman.*, depname from tbl_salesman join tbl_department on tbl_salesman.depid=tbl_department.depid;
+or
+
+select salesid, name, address , mobile,email , depname from tbl_salesman join tbl_department on tbl_salesman.depid=tbl_department.depid;
+``` 
+
+# inner join :
+
+1. iner join are used to join more than one tables with common field 
+2. inner join are used to match data from one tables to another table if data matched join the tables otherwise return null values 
+
+**syntax**
+
+```
+select tbl1.*, columname from tbl1 inner join tbl2 on tbl1.commonfield=tbl2.commfield;
+or
+select tbl_salesman.*, depname from tbl_salesman inner join tbl_department on tbl_salesman.depid=tbl_department.depid;
+or
+
+select salesid, name, address , mobile,email , depname from tbl_salesman inner join tbl_department on tbl_salesman.depid=tbl_department.depid;
+
+or
+select salesid, name, address , mobile,email , depname, compname from tbl_salesman inner join tbl_department on tbl_salesman.depid=tbl_department.depid inner join tbl_company on tbl_salesman.compid=tbl_company.compid;
+``` 
+
+
+# left join :
+
+1. left join are used to join more than one tables with common field 
+2. left join are used to join first table of left rows with second table of left rows if data matched from first table of left rows return all data of first table and join otherwise return null values.
+
+**syntax**
+
+```
+select tbl1.*, columname from tbl1 left join tbl2 on tbl1.commonfield=tbl2.commfield;
+or
+select tbl_salesman.*, depname from tbl_salesman left join tbl_department on tbl_salesman.depid=tbl_department.depid;
+or
+
+select salesid, name, address , mobile,email , depname from tbl_salesman left join tbl_department on tbl_salesman.depid=tbl_department.depid;
+
+or
+select salesid, name, address , mobile,email , depname, compname from tbl_salesman left join tbl_department on tbl_salesman.depid=tbl_department.depid left join tbl_company on tbl_salesman.compid=tbl_company.compid;
+
+``` 
+
+# right join :
+
+1. right join are used to join more than one tables with common field 
+2. right join are used to join second table of right rows with first table of right rows if data matched from second table of right rows return all data of second  table and join otherwise return null values.
+
+**syntax**
+
+```
+select tbl1.*, columname from tbl1 right join tbl2 on tbl1.commonfield=tbl2.commfield;
+or
+select tbl_salesman.*, depname from tbl_salesman right join tbl_department on tbl_salesman.depid=tbl_department.depid;
+or
+
+select salesid, name, address , mobile,email , depname from tbl_salesman right join tbl_department on tbl_salesman.depid=tbl_department.depid;
+
+or
+select salesid, name, address , mobile,email , depname, compname from tbl_salesman right join tbl_department on tbl_salesman.depid=tbl_department.depid right join tbl_company on tbl_salesman.compid=tbl_company.compid;
+
+``` 
+
+# full join : not dupported in mysql
+
+
+# cross join 
+
+1. cross join are used to join table with cross of data 
+2. cross join return dublicate data 
+
+**examples**
+```
+select * from tbl_salesman cross join tbl_department
+```
 
 
 # what is SQL Case In ?
