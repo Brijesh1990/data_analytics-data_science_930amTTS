@@ -751,10 +751,12 @@ create_at datetime
 1. join 
 2. inner join 
 3. outer join 
-1. left outer join 
-2. right outer join 
-3. full outer join 
+   1. left outer join 
+   2. right outer join 
+   3. full outer join 
 4. cross join 
+5. self join 
+6. union join 
 
 # join :
 
@@ -845,23 +847,91 @@ select salesid, name, address , mobile,email , depname, compname from tbl_salesm
 select * from tbl_salesman cross join tbl_department
 ```
 
+# self join :
 
-# what is SQL Case In ?
+1. self join are used to join itself 
 
+**examples**
 
-# what is SQL windows function  ?
+```
+select e.empid, e.name as employee_name , m.name as manager_name  from tbl_employee e inner join tbl_employee m on e.manager_id=m.empid; 
 
+```
+# union join :
+1. union join is combine of left join + right join 
+2. this is a solution of full join 
 
+**examples**
+
+```
+select tbl_salesman.*, depname from tbl_salesman left join tbl_department on tbl_salesman.depid=tbl_department.depid
+union 
+select tbl_salesman.*, depname from tbl_salesman right join tbl_department on tbl_salesman.depid=tbl_department.depid;
+
+```
 # what is SQL index or indexer ?
 
+1. SQL index or indexer create or used to improved speed of tables 
+2. SQL indexer is used to fast lookups or search data from tables 
+3. SQL indexer is also create fast speed optimization of tables 
+
+# types of indexer 
+1. **single indexer**
+
+  - when we create a indexer on single column that is called single indexer 
+  
+  **examples**
+  ```
+  create index tbl_products_index1 on tbl_products (pid);
+
+  ```
+2. **composit indexer** 
+  
+   
+  - when we create a indexer on more than one  columns that is called composit indexer 
+  
+  **examples**
+  ```
+  create index tbl_products_index2 on tbl_products (pid, pname, qty, price);
+
+  ```
 
 # what is SQL view  ?
+  
+1. create a SQL views for clone of a tables 
+2. create a SQL views for hide some data from some users there we create a clone of tables of view of table 
+3. create a View and when we changed in view main tables are effected 
 
+**examples**
+
+```
+create view view_tbl_customer as select * from tbl_customer;
+or
+create view view_tbl_customer as select * from tbl_customer where custid in (1,3,6);
+or 
+create view view_tbl_customer as select custid , name , password ,phone  from tbl_customer;
+or
+create view view_tbl_salesman as select * from tbl_salesman;
+```
+# what is SQL Case In or case when ?
+
+1. check a multiple case using case when 
+2. check a multiple case using case when and it is also check logic based case in tables
+3. filter logic based case data from tables used **case when**
+
+**examples**
+
+```
+select name , salary , case when salary >=75000 then 'Higher Earner'  when salary >=50000 then  'Medium Earner' else 'Lower salary' end as salary_earner from tbl_employee; 
+or
+select name , salary , case when salary >=75000 then 'Higher Earner'  when salary >=50000 then  'Medium Earner' else 'Lower salary' end as salary_earner from tbl_employee; 
+```
 
 # what is SQL trigger ?
 
-
 # what is SQL store procedure ?
+
+# what is SQL windows function  ?
 
 # what is SQL CTE ?
 
