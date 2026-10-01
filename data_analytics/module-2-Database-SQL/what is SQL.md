@@ -927,11 +927,133 @@ or
 select name , salary , case when salary >=75000 then 'Higher Earner'  when salary >=50000 then  'Medium Earner' else 'Lower salary' end as salary_earner from tbl_employee; 
 ```
 
+# working on MySQL workbench of SQL
+
+1. create a database and tables structured in MySQL workbench
+2. create a database and tables structured in MySQL workbench using query
+
+
+**examples**
+
+```
+CREATE TABLE `mausic_systems_app`.`actors` (
+actor_id int auto_increment primary key,
+name varchar(255),
+age int,
+address text,
+mobile bigInt
+);
+
+or
+
+INSERT INTO `mausic_systems_app`.`actors` (`name`, `age`, `address`, `mobile`) VALUES ('amitabh bachan', '89', 'juhu mumbai', '921323036');
+or
+
+INSERT INTO `mausic_systems_app`.`actors` (`name`, `age`, `address`, `mobile`) VALUES ('abhishek bachan', '45', 'juhu mumbai', '981323036'),('salman khan', '68', 'mumbai', '9813230786');
+
+or
+
+CREATE TABLE `mausic_systems_app`.`department` (
+depid int auto_increment primary key,
+depname varchar(255)
+);
+or
+
+CREATE TABLE `mausic_systems_app`.`company` (
+compid int auto_increment primary key,
+compname varchar(255)
+);
+or
+
+
+INSERT INTO `mausic_systems_app`.`company` (`compname`) VALUES ('infosys'),('hcl'),('tops technologies'),('tcs');
+
+or
+
+
+INSERT INTO `mausic_systems_app`.`department` (`depname`) VALUES ('IT'),('CSE'),('EC'),('HR'),('banking'),('Testing');
+
+or 
+
+CREATE TABLE `mausic_systems_app`.`employee` (
+empid int auto_increment primary key,
+empname varchar(255),
+age int,
+address text,
+mobile bigint,
+salary int,
+depid int,
+CONSTRAINT depid FOREIGN KEY (depid) REFERENCES department(depid),
+compid int,
+CONSTRAINT compid FOREIGN KEY (compid) REFERENCES company(compid)
+);
+
+
+or
+
+INSERT INTO `employee` (`empid`, `empname`, `age`, `address`, `mobile`, `salary`, `depid`, `compid`) VALUES (NULL, 'tej', '24', 'ahemdabad', '941221518547', '53000', '2', '3'), (NULL, 'megha', '21', '150 feet ring road rajkot', '9458003878', '53000', '2', '2'),(NULL, 'shrusti', '21', '150 feet ring road rajkot', '94580038478', '54000', '3', '2');
+
+or 
+
+select mausic_systems_app.employee.*,depname,compname from mausic_systems_app.employee join  mausic_systems_app.department  on mausic_systems_app.employee.depid=mausic_systems_app.department.depid  join mausic_systems_app.company on mausic_systems_app.employee.compid=mausic_systems_app.company.compid;
+
+or 
+
+select empid,empname,mobile,depname,compname from mausic_systems_app.employee join  mausic_systems_app.department  on mausic_systems_app.employee.depid=mausic_systems_app.department.depid  join mausic_systems_app.company on mausic_systems_app.employee.compid=mausic_systems_app.company.compid;
+
+
+```
+
+# screenshot of MySQL workbench
+
+![alt text](image-6.png)
+
+# create a csv or excel file from MySQL workbench
+
+![alt text](image-7.png)
+
+
+# create a table data in graphical view in MySQL workbench
+
+![alt text](image-8.png)
+
+# mysql workbench database connect excel
+
+![alt text](image-9.png)
+
+# excel data or tables data 
+
+![alt text](image-10.png)
+
+# what is SQL windows function  ?
+
+1. SQL windows function is used to perform calculations across a set of table rows that are somehow related to the current row.
+
+2. SQL windows function create a default index on tables that can be stored a unique value of each row in tables
+
+
+# types of SQL windows function ?
+1. rank() over()
+2. dense_rank() over()
+3. row_number() over()
+4. ntile() over()
+5. first_value() over()
+6. last_value() over()
+7. lag() over()
+8. lead() over()
+9. sum() over()
+10. avg() over()
+11. min() over()
+12. max() over()
+13. count() over()
+
+**examples of windows function**
+
 # what is SQL trigger ?
+
 
 # what is SQL store procedure ?
 
-# what is SQL windows function  ?
 
 # what is SQL CTE ?
 
