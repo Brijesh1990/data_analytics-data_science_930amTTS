@@ -1031,7 +1031,6 @@ select empid,empname,mobile,depname,compname from mausic_systems_app.employee jo
 
 2. SQL windows function create a default index on tables that can be stored a unique value of each row in tables
 
-
 # types of SQL windows function ?
 1. rank() over()
 2. dense_rank() over()
