@@ -106,7 +106,7 @@ value is None
 
 Use `==` to compare values for equality; use `is` when object identity is what matters (commonly when checking for `None`).
 
-### 8. Conditional expression
+### 8. Conditional expression or ternary operator 
 
 The conditional expression selects one of two values based on a condition:
 
